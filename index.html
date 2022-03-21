@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        padding: 0 20px;
+    }
+
+    .main {
+        margin-bottom: 100px;
+    }
+
+    .title {
+        margin: 20px 0;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .a-center {
+        align-items: center;
+    }
+
+    .j-end {
+        justify-content: flex-end;
+    }
+
+
+
+    .ml-20 {
+        margin-left: 20px;
+    }
+
+    .mt-20 {
+        margin-top: 20px;
+    }
+
+    .item {
+        border: 1px solid #ddd;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, .4);
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .item:nth-child(even) {
+        background: #EFEFEF;
+    }
+
+    .item__image {
+        border: 1px solid #ddd;
+        padding: 20px;
+        max-width: 100%;
+        width: 33.33%;
+        height: auto;
+        max-height: 100%;
+    }
+
+    .btn {
+        outline: none;
+        border: 1px solid transparent;
+        background-color: transparent;
+        padding: 8px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all .5s;
+        font-weight: bold;
+        min-width: 100px;
+    }
+
+    .btn:hover {
+        opacity: .8;
+    }
+
+    .btn--primary {
+        background-color: #61A4BC;
+        color: white;
+    }
+
+    .check-box {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .check-box label {
+        cursor: pointer;
+    }
+
+    .check-box input {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .bg-white {
+        background-color: white;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        background-color: #180A0A;
+        padding: 20px;
+
+    }
+</style>
+
+<body>
+    <h3 class="title">Title</h3>
+
+    <main class="main">
+        <div class="item">
+            <div class="flex a-center">
+                <img class="item__image" src="https://www.saloodo.com/wp-content/uploads/2021/09/truck-1.png" alt=""
+                    loading="lazy">
+                <img class="item__image ml-20" src="https://www.saloodo.com/wp-content/uploads/2021/09/truck-1.png"
+                    alt="" loading="lazy">
+                <div class="ml-20">
+                    <div class="check-box">
+                        <input type="radio" name="item1-radio" id="item1-true" checked>
+                        <label for="item1-true">Label 1</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="radio" name="item1-radio" id="item1-false">
+                        <label for="item1-false">Label 2</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="radio" name="item1-radio" id="item1-none">
+                        <label for="item1-none">Label 3</label>
+                    </div>
+
+                </div>
+            </div>
+            <p class="mt-20">Path: https://www.saloodo.com/wp-content/uploads/2021/09/truck-1.png</p>
+        </div>
+        <div class="item">
+            <div class="flex a-center">
+                <img class="item__image" src="https://www.saloodo.com/wp-content/uploads/2021/09/truck-1.png" alt="">
+                <img class="item__image ml-20" src="https://www.saloodo.com/wp-content/uploads/2021/09/truck-1.png"
+                    alt="">
+                <div class="ml-20">
+                    <div class="check-box">
+                        <input type="radio" name="item2-radio" id="item2-true" checked>
+                        <label for="item1-true">Label 1</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="radio" name="item2-radio" id="item2-false">
+                        <label for="item1-false">Label 2</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="radio" name="item2-radio" id="item2-none">
+                        <label for="item1-none">Label 3</label>
+                    </div>
+
+                </div>
+            </div>
+            <p class="mt-20">Path: https://www.saloodo.com/wp-content/uploads/2021/09/truck-1.png</p>
+        </div>
+        <div class="item">
+            <div class="flex a-center">
+                <img class="item__image" src="https://www.saloodo.com/wp-content/uploads/2021/09/truck-1.png" alt="">
+                <img class="item__image ml-20" src="https://www.saloodo.com/wp-content/uploads/2021/09/truck-1.png"
+                    alt="">
+                <div class="ml-20">
+                    <div class="check-box">
+                        <input type="radio" name="item3-radio" id="item3-true" checked>
+                        <label for="item1-true">Label 1</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="radio" name="item3-radio" id="item3-false">
+                        <label for="item1-false">Label 2</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="radio" name="item3-radio" id="item3-none">
+                        <label for="item1-none">Label 3</label>
+                    </div>
+
+                </div>
+            </div>
+            <p class="mt-20">Path: https://www.saloodo.com/wp-content/uploads/2021/09/truck-1.png</p>
+        </div>
+        <div class="item">
+            <div class="flex a-center">
+                <img class="item__image" src="https://www.saloodo.com/wp-content/uploads/2021/09/truck-1.png" alt="">
+                <img class="item__image ml-20" src="https://www.saloodo.com/wp-content/uploads/2021/09/truck-1.png"
+                    alt="">
+                <div class="ml-20">
+                    <div class="check-box">
+                        <input type="radio" name="item4-radio" id="item4-true" checked>
+                        <label for="item1-true">Label 1</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="radio" name="item4-radio" id="item4-false">
+                        <label for="item1-false">Label 2</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="radio" name="item4-radio" id="item4-none">
+                        <label for="item1-none">Label 3</label>
+                    </div>
+
+                </div>
+            </div>
+            <p class="mt-20">Path: https://www.saloodo.com/wp-content/uploads/2021/09/truck-1.png</p>
+        </div>
+    </main>
+
+    <footer class="footer flex j-end a-center">
+        <button class="btn bg-white">Reset</button>
+        <button class="btn btn--primary ml-20">Download</button>
+    </footer>
+
+</body>
+
+</html>
